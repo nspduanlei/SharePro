@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SharePro</string>
+
+    <string name="new_info">
+        近日，工业和信息化部公布了第三季度对55家手机应用商店中应用软件的技术检测结果：发现违规软件31款，涉及违规收集使用用户个人信息、恶意“吸费”、强行捆绑推广其他应用软件等问题。排名前三为：安锋网8款，百度手机助手4款，绿化软件站4款。
+    </string>
+
+</resources>

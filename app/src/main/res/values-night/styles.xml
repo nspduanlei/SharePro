@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="styleImage">
+        <item name="android:src">@drawable/girl</item>
+    </style>
+
+</resources>
