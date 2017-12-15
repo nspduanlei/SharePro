@@ -41,4 +41,11 @@
         android:padding="20dp"
         android:text="@string/new_info"
         android:textColor="@color/colorContent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android布局方式"
+    android:onClick="gotoLayout"/>
+
 </LinearLayout>

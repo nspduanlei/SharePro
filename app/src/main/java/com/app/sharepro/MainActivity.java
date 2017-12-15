@@ -3,6 +3,7 @@ package com.app.sharepro;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -37,5 +38,9 @@ public class MainActivity extends BaseActivity {
     finish();
     startActivity(new Intent(MainActivity.this, MainActivity.class));
     overridePendingTransition(0, 0);
+  }
+
+  public void gotoLayout(View view) {
+    startActivity(new Intent(this, TestLayoutActivity.class));
   }
 }

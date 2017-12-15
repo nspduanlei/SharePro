@@ -19,5 +19,6 @@ public class LoginActivity extends BaseActivity {
 
   public void gotoMain(View view) {
     startActivity(new Intent(this, MainActivity.class));
+    this.finish();
   }
 }
