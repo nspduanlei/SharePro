@@ -1,6 +1,7 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.application' //应用程序模块
+//apply plugin: 'com.android.library' //库模块
 
-android {
+android { //配置项目构建的各种属性
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.app.sharepro"
@@ -8,33 +9,17 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+    buildTypes { //指定生成安装文件的相关配置
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-
-    splits {
-        density {
-            enable true
-            exclude "xxxhdpi"
-            reset()
-            include "ldpi", "xxhdpi"
-            compatibleScreens 'small', 'normal', 'large', 'xlarge'
-        }
-    }
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }

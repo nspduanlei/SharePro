@@ -13,12 +13,14 @@
         android:elevation="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="夜间模式"
             android:textColor="@color/colorTitle"/>
+
         <Switch
             android:id="@+id/switch_night"
             android:layout_width="wrap_content"
@@ -45,7 +47,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="android布局方式"
-    android:onClick="gotoLayout"/>
+        android:onClick="gotoLayout"
+        android:text="基本布局"/>
 
 </LinearLayout>
