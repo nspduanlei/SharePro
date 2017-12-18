@@ -103,7 +103,7 @@ public class GuideActivity extends AppCompatActivity {
           case ViewPager.SCROLL_STATE_IDLE:
             Log.d(TAG,"滑动动画做完");
             if(mViewPager.getCurrentItem() == mViewPager.getAdapter().getCount() - 1 && !flag) {
-              startActivity(new Intent(GuideActivity.this, LoginActivity.class));
+              startActivity(new Intent(GuideActivity.this, MainActivity.class));
               finish();
             }
             flag = true;

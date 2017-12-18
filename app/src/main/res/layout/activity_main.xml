@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+
+    <ImageView
+        style="@style/styleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="10dp"
+        android:padding="20dp"
+        android:text="@string/new_info"
+        android:textColor="@color/colorContent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoLayout"
+        android:text="基本布局"/>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/colorBg"
         android:elevation="10dp"
+        android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
@@ -27,27 +50,5 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"/>
     </FrameLayout>
-
-    <ImageView
-        style="@style/styleImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:lineSpacingExtra="10dp"
-        android:padding="20dp"
-        android:text="@string/new_info"
-        android:textColor="@color/colorContent"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="gotoLayout"
-        android:text="基本布局"/>
 
 </LinearLayout>
