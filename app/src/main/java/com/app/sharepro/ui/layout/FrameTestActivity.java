@@ -15,6 +15,6 @@ public class FrameTestActivity extends BaseActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_linear_test);
+    setContentView(R.layout.activity_frame_test);
   }
 }
