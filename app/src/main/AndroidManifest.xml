@@ -21,6 +21,9 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".TestLayoutActivity"/>
         <activity android:name=".ui.layout.LinearTestActivity"/>
+        <activity android:name=".ui.layout.ConstraintTestActivity"/>
+        <activity android:name=".ui.layout.FrameTestActivity"/>
+        <activity android:name=".ui.layout.RelativeTestActivity"/>
     </application>
 
 </manifest>
