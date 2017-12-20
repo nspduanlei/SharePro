@@ -31,12 +31,14 @@ public class GuideActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_guide);
+    mViewPager = new ViewPager(this);
+    setContentView(mViewPager);
+
+//    setContentView(R.layout.activity_guide);
+//    mViewPager = findViewById(R.id.vp_test);
 
     //透明状态栏效果
-    StateBarUtil.setStateBar(this);
-
-    mViewPager = findViewById(R.id.vp_test);
+    StateBarUtil.setTranStateBar(this);
 
     //为ViewPager添加切换动画效果, 3.0以后才有效果
     mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
@@ -101,7 +103,7 @@ public class GuideActivity extends AppCompatActivity {
             flag = true;
             break;
           case ViewPager.SCROLL_STATE_IDLE:
-            Log.d(TAG,"滑动动画做完");
+            Log.d(TAG,"滑动动画完毕");
             if(mViewPager.getCurrentItem() == mViewPager.getAdapter().getCount() - 1 && !flag) {
               startActivity(new Intent(GuideActivity.this, MainActivity.class));
               finish();
